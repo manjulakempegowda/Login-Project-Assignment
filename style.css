@@ -1,93 +1,84 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-header .header{
-  background-color: #f1ebf1;
-  height: 45px;
+.flex-container{
+    display: flex;
+    color: rgb(190, 78, 145);
 }
-header a img{
-  width: 134px;
-margin-top: 4px;
+.flex-container div{
+  flex: 1;
 }
-.h3{
-  font-family :"Georgia", sans-serif;
-  font-style:italic;
-  font-size:x-large ;
-  color:#f2eff1
-}
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
-
-}
-.login-page .form .login{
-  margin-top: -31px;
-margin-bottom: 26px;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #d49cca;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  border-radius: 30px;
-}
-
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-  border-radius: 30px;
-}
-
-.form button {
-  font-family: "", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background-color: #be6eb9;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #f8f3f7;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-  border-radius: 30px;
-  font-family :"Georgia", sans-serif;
-  font-style:italic;
-  font-size:large ;
-  color:#f2eff1
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #f4f7f4;
-  font-size: 12px;
-  
-}
-.form .message a {
-  color: #f4f7f4;
+.flex-container a{
   text-decoration: none;
-  
+  color: rgb(222, 72, 207);
 }
-
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
+.flex-container a:hover{
+  text-decoration: underline;
 }
-
-body {
+.container{
   
   background-color: #e2b9d7;
-  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 700px ;
+  align-items: center
+
+}
+.login-form h1{
+  color: rgb(190, 78, 145);
+  text-align: center;
+}
+.login-form{
+  background-color: rgb(232, 227, 231);
+  padding: 10px;
+  width: 400px;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.46);
+box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.46);
+}
+.flex-input{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px ;
+  
+}
+input[type= "text"],
+[type= "password"]{
+   padding: 10px;
+   border: none;
+   border-radius: 25px;
+   font-size: 16px;
+   
+  
+}
+label{
+  flex-basis: 130px;
+  margin-top: 10px;
+  font-size: 20px;
+  color:rgb(190, 78, 145)
+}
+input[type="button"]{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(190, 78, 145);
+  color: white;
+  border: none;
+  margin: 20px 0;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.46);
+box-shadow: 2px 6px 52px 0px rgba(0,0,0,0.46);
+}
+input[type="button"]:hover{
+  cursor: pointer;
+  background-color: #e2b9d7;
+}
+@media all and (max-width: 400px){
+  .flex-input{
+    flex-direction: column;
+  }
+  label{
+    flex-basis: 0;
+  }
 }

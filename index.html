@@ -4,23 +4,30 @@
 <link rel= "stylesheet" href= "style.css" >
 <title> Login Form </title>
 </head>
-<body>
-  <body>
-    <div class= "login-page">
-      <div class= "form">
-        <div class= "login">
-          <div class= "login-header">
-            <h3 class= "h3 "> LOGIN </h3>
+  <body class= "container">
+         
+           <form action ="" class= "login-form" >
+            <h1>Login</h1>
+          <div class= "flex-input">
+            <label for= "">Username</label>
+            <input type= "text" placeholder= "John Smith" name= "username" id="">
           </div>
-          <form class= "login-form">
-          <input type= "text" placeholder= "John Smith" name= "username"/>
-          <input type= "password" placeholder= "Password" name= "password"/>
+          <div class= "flex-input">
+            <label for= "">Password</label>
+            <input type= "password" placeholder= "Password" name= "password" id="">
+          </div>
+          <div>
+            <input type="button" value= "LOGIN">
+          </div>
+          <div class="flex-container">
+            <div>
+            <input type= "checkbox" name= "" id="">
+            <span>Remember me</span>
+          </div>
+          <div style="text-align: right;">
+            <a href="#">Forgot Password?</a>
+          </div>
         </div>
-          <button>Login</button>
-          <p class= "message">Not registered&nbsp;? &nbsp; <a href= "#">Create an account</a></p>
-          </form>
-      </div>
-    </div>
-</body>
-</body>
+      </form>
+    </body>
 </html>
